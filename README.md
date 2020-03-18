@@ -1,6 +1,6 @@
 # Domain-Driven Design + Firebase Flutter Course
 
-### The whole accompanying tutorial series is available at :point_right: [this post](https://resocoder.com/flutter-firebase-ddd-course) :point_left:.
+### The whole accompanying tutorial series is available at :point_right: [this link](https://resocoder.com/flutter-firebase-ddd-course) :point_left:.
 
 #### _Find more tutorials on [resocoder.com](https://resocoder.com)_
 
