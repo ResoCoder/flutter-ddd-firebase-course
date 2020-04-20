@@ -33,13 +33,13 @@ mixin _$ValueFailure<T> {
 
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result invalidEmail(@required String failedValue),
-    @required Result shortPassword(@required String failedValue),
+    @required Result invalidEmail(String failedValue),
+    @required Result shortPassword(String failedValue),
   });
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result invalidEmail(@required String failedValue),
-    Result shortPassword(@required String failedValue),
+    Result invalidEmail(String failedValue),
+    Result shortPassword(String failedValue),
     @required Result orElse(),
   });
   @optionalTypeArgs
@@ -145,8 +145,8 @@ class _$InvalidEmail<T> implements InvalidEmail<T> {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result invalidEmail(@required String failedValue),
-    @required Result shortPassword(@required String failedValue),
+    @required Result invalidEmail(String failedValue),
+    @required Result shortPassword(String failedValue),
   }) {
     assert(invalidEmail != null);
     assert(shortPassword != null);
@@ -156,8 +156,8 @@ class _$InvalidEmail<T> implements InvalidEmail<T> {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result invalidEmail(@required String failedValue),
-    Result shortPassword(@required String failedValue),
+    Result invalidEmail(String failedValue),
+    Result shortPassword(String failedValue),
     @required Result orElse(),
   }) {
     assert(orElse != null);
@@ -265,8 +265,8 @@ class _$ShortPassword<T> implements ShortPassword<T> {
   @override
   @optionalTypeArgs
   Result when<Result extends Object>({
-    @required Result invalidEmail(@required String failedValue),
-    @required Result shortPassword(@required String failedValue),
+    @required Result invalidEmail(String failedValue),
+    @required Result shortPassword(String failedValue),
   }) {
     assert(invalidEmail != null);
     assert(shortPassword != null);
@@ -276,8 +276,8 @@ class _$ShortPassword<T> implements ShortPassword<T> {
   @override
   @optionalTypeArgs
   Result maybeWhen<Result extends Object>({
-    Result invalidEmail(@required String failedValue),
-    Result shortPassword(@required String failedValue),
+    Result invalidEmail(String failedValue),
+    Result shortPassword(String failedValue),
     @required Result orElse(),
   }) {
     assert(orElse != null);
