@@ -168,7 +168,7 @@ packages:
       name: dartz
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.9.0"
+    version: "0.9.1"
   firebase:
     dependency: transitive
     description:
@@ -182,7 +182,7 @@ packages:
       name: firebase_auth
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.16.0"
+    version: "0.16.1"
   firebase_auth_platform_interface:
     dependency: transitive
     description:
@@ -203,7 +203,7 @@ packages:
       name: firebase_core
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.4.4+3"
+    version: "0.4.5"
   firebase_core_platform_interface:
     dependency: transitive
     description:
@@ -231,7 +231,7 @@ packages:
       name: flushbar
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.10.0"
+    version: "1.10.4"
   flutter:
     dependency: "direct main"
     description: flutter
@@ -255,7 +255,7 @@ packages:
       name: freezed
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.10.7"
+    version: "0.10.9"
   freezed_annotation:
     dependency: "direct main"
     description:
@@ -283,14 +283,14 @@ packages:
       name: google_sign_in
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.4.4"
+    version: "4.5.1"
   google_sign_in_platform_interface:
     dependency: transitive
     description:
       name: google_sign_in_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.0"
+    version: "1.1.2"
   google_sign_in_web:
     dependency: transitive
     description:
@@ -339,14 +339,14 @@ packages:
       name: injectable
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.0"
+    version: "0.4.0+1"
   injectable_generator:
     dependency: "direct dev"
     description:
       name: injectable_generator
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.3.5"
+    version: "0.4.0"
   io:
     dependency: transitive
     description:
@@ -374,7 +374,7 @@ packages:
       name: lint
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "1.1.1"
+    version: "1.2.0"
   logging:
     dependency: transitive
     description:
