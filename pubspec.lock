@@ -368,6 +368,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "3.0.1"
+  kt_dart:
+    dependency: "direct main"
+    description:
+      name: kt_dart
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "0.7.0+1"
   lint:
     dependency: "direct dev"
     description:
