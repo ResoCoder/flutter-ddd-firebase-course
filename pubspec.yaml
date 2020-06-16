@@ -24,6 +24,7 @@ dependencies:
   flutter_bloc: ^4.0.0
   firebase_core: ^0.4.5
   firebase_auth: ^0.16.1
+  cloud_firestore: ^0.13.6
   google_sign_in: ^4.5.1
   get_it: ^4.0.2
   injectable: ^0.4.0+1
@@ -31,6 +32,7 @@ dependencies:
   uuid: ^2.0.4
   auto_route: ^0.5.0
   kt_dart: ^0.7.0+1
+  json_annotation: ^3.0.1
 
 dev_dependencies:
   build_runner:
@@ -38,6 +40,7 @@ dev_dependencies:
   lint: ^1.2.0
   injectable_generator: ^0.4.0
   auto_route_generator: ^0.5.0
+  json_serializable: ^3.3.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
