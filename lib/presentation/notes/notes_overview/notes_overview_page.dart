@@ -6,6 +6,7 @@ import 'package:notes_firebase_ddd_course/application/auth/auth_bloc.dart';
 import 'package:notes_firebase_ddd_course/application/notes/note_actor/note_actor_bloc.dart';
 import 'package:notes_firebase_ddd_course/application/notes/note_watcher/note_watcher_bloc.dart';
 import 'package:notes_firebase_ddd_course/injection.dart';
+import 'package:notes_firebase_ddd_course/presentation/notes/notes_overview/widgets/notes_overview_body_widget.dart';
 import 'package:notes_firebase_ddd_course/presentation/routes/router.gr.dart';
 
 class NotesOverviewPage extends StatelessWidget {
@@ -68,6 +69,7 @@ class NotesOverviewPage extends StatelessWidget {
               )
             ],
           ),
+          body: NotesOverviewBody(),
           floatingActionButton: FloatingActionButton(
             onPressed: () {
               // TODO: Navigate to NoteFormPage
