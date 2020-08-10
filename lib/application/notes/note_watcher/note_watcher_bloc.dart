@@ -18,12 +18,10 @@ part 'note_watcher_bloc.freezed.dart';
 class NoteWatcherBloc extends Bloc<NoteWatcherEvent, NoteWatcherState> {
   final INoteRepository _noteRepository;
 
-  NoteWatcherBloc(this._noteRepository);
+  NoteWatcherBloc(this._noteRepository)
+      : super(const NoteWatcherState.initial());
 
   StreamSubscription<Either<NoteFailure, KtList<Note>>> _noteStreamSubscription;
-
-  @override
-  NoteWatcherState get initialState => const NoteWatcherState.initial();
 
   @override
   Stream<NoteWatcherState> mapEventToState(

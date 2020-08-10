@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'note_form_bloc.dart';
 
@@ -12,30 +12,35 @@ T _$identity<T>(T value) => value;
 class _$NoteFormEventTearOff {
   const _$NoteFormEventTearOff();
 
+// ignore: unused_element
   _Initialized initialized(Option<Note> initialNoteOption) {
     return _Initialized(
       initialNoteOption,
     );
   }
 
+// ignore: unused_element
   _BodyChanged bodyChanged(String bodyStr) {
     return _BodyChanged(
       bodyStr,
     );
   }
 
+// ignore: unused_element
   _ColorChanged colorChanged(Color color) {
     return _ColorChanged(
       color,
     );
   }
 
+// ignore: unused_element
   _TodosChanged todosChanged(KtList<TodoItemPrimitive> todos) {
     return _TodosChanged(
       todos,
     );
   }
 
+// ignore: unused_element
   _Saved saved() {
     return const _Saved();
   }
@@ -726,6 +731,7 @@ abstract class _Saved implements NoteFormEvent {
 class _$NoteFormStateTearOff {
   const _$NoteFormStateTearOff();
 
+// ignore: unused_element
   _NoteFormState call(
       {@required Note note,
       @required bool showErrorMessages,

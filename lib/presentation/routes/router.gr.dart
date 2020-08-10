@@ -4,12 +4,14 @@
 // AutoRouteGenerator
 // **************************************************************************
 
-import 'package:flutter/material.dart';
-import 'package:flutter/cupertino.dart';
+// ignore_for_file: public_member_api_docs
+
 import 'package:auto_route/auto_route.dart';
-import 'package:notes_firebase_ddd_course/presentation/splash/splash_page.dart';
-import 'package:notes_firebase_ddd_course/presentation/sign_in/sign_in_page.dart';
-import 'package:notes_firebase_ddd_course/presentation/notes/notes_overview/notes_overview_page.dart';
+import 'package:flutter/material.dart';
+
+import '../notes/notes_overview/notes_overview_page.dart';
+import '../sign_in/sign_in_page.dart';
+import '../splash/splash_page.dart';
 
 class Routes {
   static const String splashPage = '/';
@@ -33,19 +35,19 @@ class Router extends RouterBase {
   @override
   Map<Type, AutoRouteFactory> get pagesMap => _pagesMap;
   final _pagesMap = <Type, AutoRouteFactory>{
-    SplashPage: (RouteData data) {
+    SplashPage: (data) {
       return MaterialPageRoute<dynamic>(
         builder: (context) => SplashPage(),
         settings: data,
       );
     },
-    SignInPage: (RouteData data) {
+    SignInPage: (data) {
       return MaterialPageRoute<dynamic>(
         builder: (context) => SignInPage(),
         settings: data,
       );
     },
-    NotesOverviewPage: (RouteData data) {
+    NotesOverviewPage: (data) {
       return MaterialPageRoute<dynamic>(
         builder: (context) => NotesOverviewPage(),
         settings: data,
@@ -54,15 +56,15 @@ class Router extends RouterBase {
   };
 }
 
-// *************************************************************************
-// Navigation helper methods extension
-// **************************************************************************
+/// ************************************************************************
+/// Navigation helper methods extension
+/// *************************************************************************
 
-extension RouterNavigationHelperMethods on ExtendedNavigatorState {
-  Future<dynamic> pushSplashPage() => pushNamed<dynamic>(Routes.splashPage);
+extension RouterExtendedNavigatorStateX on ExtendedNavigatorState {
+  Future<dynamic> pushSplashPage() => push<dynamic>(Routes.splashPage);
 
-  Future<dynamic> pushSignInPage() => pushNamed<dynamic>(Routes.signInPage);
+  Future<dynamic> pushSignInPage() => push<dynamic>(Routes.signInPage);
 
   Future<dynamic> pushNotesOverviewPage() =>
-      pushNamed<dynamic>(Routes.notesOverviewPage);
+      push<dynamic>(Routes.notesOverviewPage);
 }

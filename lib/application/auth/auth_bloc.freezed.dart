@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named
+// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
 
 part of 'auth_bloc.dart';
 
@@ -12,10 +12,12 @@ T _$identity<T>(T value) => value;
 class _$AuthEventTearOff {
   const _$AuthEventTearOff();
 
+// ignore: unused_element
   AuthCheckRequested authCheckRequested() {
     return const AuthCheckRequested();
   }
 
+// ignore: unused_element
   SignedOut signedOut() {
     return const SignedOut();
   }
@@ -238,14 +240,17 @@ abstract class SignedOut implements AuthEvent {
 class _$AuthStateTearOff {
   const _$AuthStateTearOff();
 
+// ignore: unused_element
   Initial initial() {
     return const Initial();
   }
 
+// ignore: unused_element
   Authenticated authenticated() {
     return const Authenticated();
   }
 
+// ignore: unused_element
   Unauthenticated unauthenticated() {
     return const Unauthenticated();
   }
