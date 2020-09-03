@@ -8,6 +8,7 @@ import 'package:notes_firebase_ddd_course/application/notes/note_form/note_form_
 import 'package:notes_firebase_ddd_course/domain/notes/note.dart';
 import 'package:notes_firebase_ddd_course/injection.dart';
 import 'package:notes_firebase_ddd_course/presentation/notes/note_form/widgets/body_field_widget.dart';
+import 'package:notes_firebase_ddd_course/presentation/notes/note_form/widgets/color_field_widget.dart';
 import 'package:notes_firebase_ddd_course/presentation/routes/router.gr.dart';
 
 class NoteFormPage extends StatelessWidget {
@@ -138,6 +139,7 @@ class NoteFormPageScaffold extends StatelessWidget {
               child: Column(
                 children: [
                   const BodyField(),
+                  const ColorField(),
                 ],
               ),
             ),
