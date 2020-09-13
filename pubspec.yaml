@@ -35,9 +35,10 @@ dependencies:
   json_annotation: ^3.0.1
   rxdart: ^0.24.1
   flutter_hooks: ^0.13.0
+  provider: ^4.3.2+2
 
 dev_dependencies:
-  build_runner:
+  build_runner: null
   freezed: ^0.11.5
   lint: ^1.2.0
   injectable_generator: ^1.0.4
@@ -46,7 +47,6 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter.
 flutter:
   # The following line ensures that the Material Icons font is

@@ -523,12 +523,12 @@ packages:
     source: hosted
     version: "1.4.0"
   provider:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: provider
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "4.3.2"
+    version: "4.3.2+2"
   pub_semver:
     dependency: transitive
     description:
