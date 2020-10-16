@@ -19,31 +19,32 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dartz: ^0.9.1
-  freezed_annotation: ^0.11.0+1
-  flutter_bloc: ^6.0.1
-  firebase_core: ^0.5.0
-  firebase_auth: ^0.18.0+1
+  auto_route: ^0.6.9
   cloud_firestore: ^0.14.0+2
-  google_sign_in: ^4.5.3
-  get_it: ^4.0.4
-  injectable: ^1.0.4
+  dartz: ^0.9.1
+  firebase_auth: ^0.18.0+1
+  firebase_core: ^0.5.0
   flushbar: ^1.10.4
-  uuid: ^2.2.0
-  auto_route: ^0.6.7
-  kt_dart: ^0.7.0+1
-  json_annotation: ^3.0.1
-  rxdart: ^0.24.1
+  flutter_bloc: ^6.0.1
   flutter_hooks: ^0.13.0
+  flutter_slidable: ^0.5.7
+  freezed_annotation: ^0.12.0
+  get_it: ^4.0.4
+  google_sign_in: ^4.5.3
+  injectable: ^1.0.4
+  json_annotation: ^3.0.1
+  kt_dart: ^0.7.0+1
   provider: ^4.3.2+2
+  rxdart: ^0.24.1
+  uuid: ^2.2.0
 
 dev_dependencies:
+  auto_route_generator: ^0.6.10
   build_runner: null
-  freezed: ^0.11.5
-  lint: ^1.2.0
+  freezed: ^0.12.2
   injectable_generator: ^1.0.4
-  auto_route_generator: ^0.6.8
   json_serializable: ^3.3.0
+  lint: ^1.2.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

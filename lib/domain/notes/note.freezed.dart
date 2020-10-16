@@ -9,6 +9,7 @@ part of 'note.dart';
 
 T _$identity<T>(T value) => value;
 
+/// @nodoc
 class _$NoteTearOff {
   const _$NoteTearOff();
 
@@ -27,9 +28,11 @@ class _$NoteTearOff {
   }
 }
 
+/// @nodoc
 // ignore: unused_element
 const $Note = _$NoteTearOff();
 
+/// @nodoc
 mixin _$Note {
   UniqueId get id;
   NoteBody get body;
@@ -39,6 +42,7 @@ mixin _$Note {
   $NoteCopyWith<Note> get copyWith;
 }
 
+/// @nodoc
 abstract class $NoteCopyWith<$Res> {
   factory $NoteCopyWith(Note value, $Res Function(Note) then) =
       _$NoteCopyWithImpl<$Res>;
@@ -46,6 +50,7 @@ abstract class $NoteCopyWith<$Res> {
       {UniqueId id, NoteBody body, NoteColor color, List3<TodoItem> todos});
 }
 
+/// @nodoc
 class _$NoteCopyWithImpl<$Res> implements $NoteCopyWith<$Res> {
   _$NoteCopyWithImpl(this._value, this._then);
 
@@ -69,6 +74,7 @@ class _$NoteCopyWithImpl<$Res> implements $NoteCopyWith<$Res> {
   }
 }
 
+/// @nodoc
 abstract class _$NoteCopyWith<$Res> implements $NoteCopyWith<$Res> {
   factory _$NoteCopyWith(_Note value, $Res Function(_Note) then) =
       __$NoteCopyWithImpl<$Res>;
@@ -77,6 +83,7 @@ abstract class _$NoteCopyWith<$Res> implements $NoteCopyWith<$Res> {
       {UniqueId id, NoteBody body, NoteColor color, List3<TodoItem> todos});
 }
 
+/// @nodoc
 class __$NoteCopyWithImpl<$Res> extends _$NoteCopyWithImpl<$Res>
     implements _$NoteCopyWith<$Res> {
   __$NoteCopyWithImpl(_Note _value, $Res Function(_Note) _then)
@@ -101,6 +108,7 @@ class __$NoteCopyWithImpl<$Res> extends _$NoteCopyWithImpl<$Res>
   }
 }
 
+/// @nodoc
 class _$_Note extends _Note {
   const _$_Note(
       {@required this.id,

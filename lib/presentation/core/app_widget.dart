@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_firebase_ddd_course/application/auth/auth_bloc.dart';
 import 'package:notes_firebase_ddd_course/injection.dart';
-import 'package:notes_firebase_ddd_course/presentation/routes/router.gr.dart';
+import 'package:notes_firebase_ddd_course/presentation/routes/router.gr.dart'
+    as app_router;
 import 'package:notes_firebase_ddd_course/presentation/sign_in/sign_in_page.dart';
 
 class AppWidget extends StatelessWidget {
@@ -19,7 +20,7 @@ class AppWidget extends StatelessWidget {
       child: MaterialApp(
         title: 'Notes',
         debugShowCheckedModeBanner: false,
-        builder: ExtendedNavigator(router: Router()),
+        builder: ExtendedNavigator.builder(router: app_router.Router()),
         theme: ThemeData.light().copyWith(
           primaryColor: Colors.green[800],
           accentColor: Colors.blueAccent,
