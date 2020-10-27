@@ -31,6 +31,7 @@ dependencies:
   freezed_annotation: ^0.12.0
   get_it: ^4.0.4
   google_sign_in: ^4.5.3
+  implicitly_animated_reorderable_list: ^0.3.0
   injectable: ^1.0.4
   json_annotation: ^3.0.1
   kt_dart: ^0.7.0+1
