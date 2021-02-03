@@ -34,6 +34,7 @@ mixin _$TodoItemPrimitive {
   String get name;
   bool get done;
 
+  @JsonKey(ignore: true)
   $TodoItemPrimitiveCopyWith<TodoItemPrimitive> get copyWith;
 }
 
@@ -143,6 +144,7 @@ class _$_TodoItemPrimitive extends _TodoItemPrimitive {
       const DeepCollectionEquality().hash(name) ^
       const DeepCollectionEquality().hash(done);
 
+  @JsonKey(ignore: true)
   @override
   _$TodoItemPrimitiveCopyWith<_TodoItemPrimitive> get copyWith =>
       __$TodoItemPrimitiveCopyWithImpl<_TodoItemPrimitive>(this, _$identity);
@@ -162,5 +164,6 @@ abstract class _TodoItemPrimitive extends TodoItemPrimitive {
   @override
   bool get done;
   @override
+  @JsonKey(ignore: true)
   _$TodoItemPrimitiveCopyWith<_TodoItemPrimitive> get copyWith;
 }

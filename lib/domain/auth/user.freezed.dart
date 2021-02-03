@@ -29,6 +29,7 @@ const $User = _$UserTearOff();
 mixin _$User {
   UniqueId get id;
 
+  @JsonKey(ignore: true)
   $UserCopyWith<User> get copyWith;
 }
 
@@ -108,6 +109,7 @@ class _$_User implements _User {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(id);
 
+  @JsonKey(ignore: true)
   @override
   _$UserCopyWith<_User> get copyWith =>
       __$UserCopyWithImpl<_User>(this, _$identity);
@@ -119,5 +121,6 @@ abstract class _User implements User {
   @override
   UniqueId get id;
   @override
+  @JsonKey(ignore: true)
   _$UserCopyWith<_User> get copyWith;
 }
