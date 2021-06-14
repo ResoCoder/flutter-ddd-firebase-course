@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'todo_item.dart';
 
@@ -9,13 +9,15 @@ part of 'todo_item.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$TodoItemTearOff {
   const _$TodoItemTearOff();
 
-// ignore: unused_element
   _TodoItem call(
-      {@required UniqueId id, @required TodoName name, @required bool done}) {
+      {required UniqueId id, required TodoName name, required bool done}) {
     return _TodoItem(
       id: id,
       name: name,
@@ -25,16 +27,17 @@ class _$TodoItemTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $TodoItem = _$TodoItemTearOff();
 
 /// @nodoc
 mixin _$TodoItem {
-  UniqueId get id;
-  TodoName get name;
-  bool get done;
+  UniqueId get id => throw _privateConstructorUsedError;
+  TodoName get name => throw _privateConstructorUsedError;
+  bool get done => throw _privateConstructorUsedError;
 
-  $TodoItemCopyWith<TodoItem> get copyWith;
+  @JsonKey(ignore: true)
+  $TodoItemCopyWith<TodoItem> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -54,14 +57,23 @@ class _$TodoItemCopyWithImpl<$Res> implements $TodoItemCopyWith<$Res> {
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object done = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? done = freezed,
   }) {
     return _then(_value.copyWith(
-      id: id == freezed ? _value.id : id as UniqueId,
-      name: name == freezed ? _value.name : name as TodoName,
-      done: done == freezed ? _value.done : done as bool,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as UniqueId,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as TodoName,
+      done: done == freezed
+          ? _value.done
+          : done // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
@@ -85,26 +97,32 @@ class __$TodoItemCopyWithImpl<$Res> extends _$TodoItemCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object id = freezed,
-    Object name = freezed,
-    Object done = freezed,
+    Object? id = freezed,
+    Object? name = freezed,
+    Object? done = freezed,
   }) {
     return _then(_TodoItem(
-      id: id == freezed ? _value.id : id as UniqueId,
-      name: name == freezed ? _value.name : name as TodoName,
-      done: done == freezed ? _value.done : done as bool,
+      id: id == freezed
+          ? _value.id
+          : id // ignore: cast_nullable_to_non_nullable
+              as UniqueId,
+      name: name == freezed
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as TodoName,
+      done: done == freezed
+          ? _value.done
+          : done // ignore: cast_nullable_to_non_nullable
+              as bool,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_TodoItem extends _TodoItem {
-  const _$_TodoItem(
-      {@required this.id, @required this.name, @required this.done})
-      : assert(id != null),
-        assert(name != null),
-        assert(done != null),
-        super._();
+  const _$_TodoItem({required this.id, required this.name, required this.done})
+      : super._();
 
   @override
   final UniqueId id;
@@ -137,24 +155,27 @@ class _$_TodoItem extends _TodoItem {
       const DeepCollectionEquality().hash(name) ^
       const DeepCollectionEquality().hash(done);
 
+  @JsonKey(ignore: true)
   @override
   _$TodoItemCopyWith<_TodoItem> get copyWith =>
       __$TodoItemCopyWithImpl<_TodoItem>(this, _$identity);
 }
 
 abstract class _TodoItem extends TodoItem {
-  const _TodoItem._() : super._();
   const factory _TodoItem(
-      {@required UniqueId id,
-      @required TodoName name,
-      @required bool done}) = _$_TodoItem;
+      {required UniqueId id,
+      required TodoName name,
+      required bool done}) = _$_TodoItem;
+  const _TodoItem._() : super._();
 
   @override
-  UniqueId get id;
+  UniqueId get id => throw _privateConstructorUsedError;
   @override
-  TodoName get name;
+  TodoName get name => throw _privateConstructorUsedError;
   @override
-  bool get done;
+  bool get done => throw _privateConstructorUsedError;
   @override
-  _$TodoItemCopyWith<_TodoItem> get copyWith;
+  @JsonKey(ignore: true)
+  _$TodoItemCopyWith<_TodoItem> get copyWith =>
+      throw _privateConstructorUsedError;
 }

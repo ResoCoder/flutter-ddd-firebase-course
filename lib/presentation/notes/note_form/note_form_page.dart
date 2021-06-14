@@ -1,7 +1,5 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:dartz/dartz.dart';
-import 'package:flushbar/flushbar.dart';
-import 'package:flushbar/flushbar_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_firebase_ddd_course/application/notes/note_form/note_form_bloc.dart';
@@ -16,11 +14,11 @@ import 'package:notes_firebase_ddd_course/presentation/routes/router.gr.dart';
 import 'package:provider/provider.dart';
 
 class NoteFormPage extends StatelessWidget {
-  final Note editedNote;
+  final Note? editedNote;
 
   const NoteFormPage({
-    Key key,
-    @required this.editedNote,
+    Key? key,
+    this.editedNote,
   }) : super(key: key);
 
   @override
@@ -37,21 +35,31 @@ class NoteFormPage extends StatelessWidget {
             (either) {
               either.fold(
                 (failure) {
-                  FlushbarHelper.createError(
-                    message: failure.map(
-                      insufficientPermission: (_) =>
-                          'Insufficient permissions ❌',
-                      unableToUpdate: (_) =>
-                          "Couldn't update the note. Was it deleted from another device?",
-                      unexpected: (_) =>
-                          'Unexpected error occured, please contact support.',
+                  final snackBar = SnackBar(
+                    behavior: SnackBarBehavior.floating,
+                    content: Text(
+                      failure.map(
+                        insufficientPermission: (_) =>
+                            'Insufficient permissions ❌',
+                        unableToUpdate: (_) =>
+                            "Couldn't update the note. Was it deleted from another device?",
+                        unexpected: (_) =>
+                            'Unexpected error occured, please contact support.',
+                      ),
                     ),
-                  ).show(context);
+                    action: SnackBarAction(
+                      label: 'Action',
+                      onPressed: () {},
+                    ),
+                  );
+
+                  ScaffoldMessenger.of(context).showSnackBar(snackBar);
                 },
                 (_) {
-                  ExtendedNavigator.of(context).popUntil(
-                    (route) => route.settings.name == Routes.notesOverviewPage,
-                  );
+                  AutoRouter.of(context).popUntil((route) {
+                    return route.settings.name ==
+                        const NotesOverviewPageRoute().routeName;
+                  });
                 },
               );
             },
@@ -75,8 +83,8 @@ class SavingInProgressOverlay extends StatelessWidget {
   final bool isSaving;
 
   const SavingInProgressOverlay({
-    Key key,
-    @required this.isSaving,
+    Key? key,
+    required this.isSaving,
   }) : super(key: key);
 
   @override
@@ -97,7 +105,7 @@ class SavingInProgressOverlay extends StatelessWidget {
               const SizedBox(height: 8),
               Text(
                 'Saving',
-                style: Theme.of(context).textTheme.bodyText2.copyWith(
+                style: Theme.of(context).textTheme.bodyText2!.copyWith(
                       color: Colors.white,
                       fontSize: 16,
                     ),
@@ -112,7 +120,7 @@ class SavingInProgressOverlay extends StatelessWidget {
 
 class NoteFormPageScaffold extends StatelessWidget {
   const NoteFormPageScaffold({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -127,9 +135,9 @@ class NoteFormPageScaffold extends StatelessWidget {
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.check),
+            icon: const Icon(Icons.check),
             onPressed: () {
-              context.bloc<NoteFormBloc>().add(const NoteFormEvent.saved());
+              context.read<NoteFormBloc>().add(const NoteFormEvent.saved());
             },
           )
         ],
@@ -140,9 +148,12 @@ class NoteFormPageScaffold extends StatelessWidget {
           return ChangeNotifierProvider(
             create: (_) => FormTodos(),
             child: Form(
-              autovalidate: state.showErrorMessages,
+              autovalidateMode: state.showErrorMessages
+                  ? AutovalidateMode.always
+                  : AutovalidateMode.disabled,
               child: SingleChildScrollView(
                 child: Column(
+                  // ignore: prefer_const_literals_to_create_immutables
                   children: [
                     const BodyField(),
                     const ColorField(),

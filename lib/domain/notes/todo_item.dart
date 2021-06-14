@@ -11,9 +11,9 @@ abstract class TodoItem implements _$TodoItem {
   const TodoItem._();
 
   const factory TodoItem({
-    @required UniqueId id,
-    @required TodoName name,
-    @required bool done,
+    required UniqueId id,
+    required TodoName name,
+    required bool done,
   }) = _TodoItem;
 
   factory TodoItem.empty() => TodoItem(

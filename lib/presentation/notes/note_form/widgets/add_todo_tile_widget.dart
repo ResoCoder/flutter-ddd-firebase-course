@@ -6,7 +6,9 @@ import 'package:notes_firebase_ddd_course/presentation/notes/note_form/misc/todo
 import 'package:notes_firebase_ddd_course/presentation/notes/note_form/misc/build_context_x.dart';
 
 class AddTodoTile extends StatelessWidget {
-  const AddTodoTile({Key key}) : super(key: key);
+  const AddTodoTile({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +33,7 @@ class AddTodoTile extends StatelessWidget {
           onTap: () {
             context.formTodos =
                 context.formTodos.plusElement(TodoItemPrimitive.empty());
-            context.bloc<NoteFormBloc>().add(
+            context.read<NoteFormBloc>().add(
                   NoteFormEvent.todosChanged(context.formTodos),
                 );
           },

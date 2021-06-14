@@ -5,8 +5,8 @@ class CriticalFailureDisplay extends StatelessWidget {
   final NoteFailure failure;
 
   const CriticalFailureDisplay({
-    Key key,
-    @required this.failure,
+    Key? key,
+    required this.failure,
   }) : super(key: key);
 
   @override
@@ -14,7 +14,6 @@ class CriticalFailureDisplay extends StatelessWidget {
     return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
-        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           const Text(
             '😱',
@@ -28,9 +27,9 @@ class CriticalFailureDisplay extends StatelessWidget {
             style: const TextStyle(fontSize: 24),
             textAlign: TextAlign.center,
           ),
-          FlatButton(
+          TextButton(
             onPressed: () {
-              print('Sending email!');
+              // print('Sending email!');
             },
             child: Row(
               mainAxisSize: MainAxisSize.min,

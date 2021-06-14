@@ -1,7 +1,5 @@
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart' hide User;
-import 'package:flutter/foundation.dart';
-import 'package:flutter/services.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:injectable/injectable.dart';
 import 'package:notes_firebase_ddd_course/domain/auth/auth_failure.dart';
@@ -26,8 +24,8 @@ class FirebaseAuthFacade implements IAuthFacade {
 
   @override
   Future<Either<AuthFailure, Unit>> registerWithEmailAndPassword({
-    @required EmailAddress emailAddress,
-    @required Password password,
+    required EmailAddress emailAddress,
+    required Password password,
   }) async {
     final emailAddressStr = emailAddress.getOrCrash();
     final passwordStr = password.getOrCrash();
@@ -48,8 +46,8 @@ class FirebaseAuthFacade implements IAuthFacade {
 
   @override
   Future<Either<AuthFailure, Unit>> signInWithEmailAndPassword({
-    @required EmailAddress emailAddress,
-    @required Password password,
+    required EmailAddress emailAddress,
+    required Password password,
   }) async {
     final emailAddressStr = emailAddress.getOrCrash();
     final passwordStr = password.getOrCrash();

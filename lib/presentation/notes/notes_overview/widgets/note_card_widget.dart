@@ -11,8 +11,8 @@ class NoteCard extends StatelessWidget {
   final Note note;
 
   const NoteCard({
-    Key key,
-    @required this.note,
+    Key? key,
+    required this.note,
   }) : super(key: key);
 
   @override
@@ -21,10 +21,10 @@ class NoteCard extends StatelessWidget {
       color: note.color.getOrCrash(),
       child: InkWell(
         onTap: () {
-          ExtendedNavigator.of(context).pushNoteFormPage(editedNote: note);
+          AutoRouter.of(context).push(NoteFormPageRoute(editedNote: note));
         },
         onLongPress: () {
-          final noteActorBloc = context.bloc<NoteActorBloc>();
+          final noteActorBloc = context.read<NoteActorBloc>();
           _showDeletionDialog(context, noteActorBloc);
         },
         child: Padding(
@@ -69,11 +69,11 @@ class NoteCard extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
           ),
           actions: <Widget>[
-            FlatButton(
+            TextButton(
               onPressed: () => Navigator.pop(context),
               child: const Text('CANCEL'),
             ),
-            FlatButton(
+            TextButton(
               onPressed: () {
                 noteActorBloc.add(NoteActorEvent.deleted(note));
                 Navigator.pop(context);
@@ -91,8 +91,8 @@ class TodoDisplay extends StatelessWidget {
   final TodoItem todo;
 
   const TodoDisplay({
-    Key key,
-    @required this.todo,
+    Key? key,
+    required this.todo,
   }) : super(key: key);
 
   @override

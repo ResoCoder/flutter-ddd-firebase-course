@@ -4,6 +4,7 @@ import 'package:injectable/injectable.dart';
 import 'package:notes_firebase_ddd_course/injection.dart';
 import 'package:notes_firebase_ddd_course/presentation/core/app_widget.dart';
 
+
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
   configureInjection(Environment.prod);

@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'note_actor_bloc.dart';
 
@@ -9,11 +9,13 @@ part of 'note_actor_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$NoteActorEventTearOff {
   const _$NoteActorEventTearOff();
 
-// ignore: unused_element
   _Deleted deleted(Note note) {
     return _Deleted(
       note,
@@ -22,33 +24,38 @@ class _$NoteActorEventTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $NoteActorEvent = _$NoteActorEventTearOff();
 
 /// @nodoc
 mixin _$NoteActorEvent {
-  Note get note;
+  Note get note => throw _privateConstructorUsedError;
 
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result deleted(Note note),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(Note note) deleted,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result deleted(Note note),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Note note)? deleted,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result deleted(_Deleted value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Deleted value) deleted,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result deleted(_Deleted value),
-    @required Result orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Deleted value)? deleted,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 
-  $NoteActorEventCopyWith<NoteActorEvent> get copyWith;
+  @JsonKey(ignore: true)
+  $NoteActorEventCopyWith<NoteActorEvent> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -72,18 +79,18 @@ class _$NoteActorEventCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object note = freezed,
+    Object? note = freezed,
   }) {
     return _then(_value.copyWith(
-      note: note == freezed ? _value.note : note as Note,
+      note: note == freezed
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as Note,
     ));
   }
 
   @override
   $NoteCopyWith<$Res> get note {
-    if (_value.note == null) {
-      return null;
-    }
     return $NoteCopyWith<$Res>(_value.note, (value) {
       return _then(_value.copyWith(note: value));
     });
@@ -113,17 +120,21 @@ class __$DeletedCopyWithImpl<$Res> extends _$NoteActorEventCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object note = freezed,
+    Object? note = freezed,
   }) {
     return _then(_Deleted(
-      note == freezed ? _value.note : note as Note,
+      note == freezed
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as Note,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_Deleted implements _Deleted {
-  const _$_Deleted(this.note) : assert(note != null);
+  const _$_Deleted(this.note);
 
   @override
   final Note note;
@@ -145,26 +156,25 @@ class _$_Deleted implements _Deleted {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(note);
 
+  @JsonKey(ignore: true)
   @override
   _$DeletedCopyWith<_Deleted> get copyWith =>
       __$DeletedCopyWithImpl<_Deleted>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result deleted(Note note),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Note note) deleted,
   }) {
-    assert(deleted != null);
     return deleted(note);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result deleted(Note note),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Note note)? deleted,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (deleted != null) {
       return deleted(note);
     }
@@ -173,20 +183,18 @@ class _$_Deleted implements _Deleted {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result deleted(_Deleted value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Deleted value) deleted,
   }) {
-    assert(deleted != null);
     return deleted(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result deleted(_Deleted value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Deleted value)? deleted,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (deleted != null) {
       return deleted(this);
     }
@@ -198,74 +206,75 @@ abstract class _Deleted implements NoteActorEvent {
   const factory _Deleted(Note note) = _$_Deleted;
 
   @override
-  Note get note;
+  Note get note => throw _privateConstructorUsedError;
   @override
-  _$DeletedCopyWith<_Deleted> get copyWith;
+  @JsonKey(ignore: true)
+  _$DeletedCopyWith<_Deleted> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 class _$NoteActorStateTearOff {
   const _$NoteActorStateTearOff();
 
-// ignore: unused_element
   _Initial initial() {
     return const _Initial();
   }
 
-// ignore: unused_element
   _ActionInProgress actionInProgress() {
     return const _ActionInProgress();
   }
 
-// ignore: unused_element
   _DeleteFailure deleteFailure(NoteFailure noteFailure) {
     return _DeleteFailure(
       noteFailure,
     );
   }
 
-// ignore: unused_element
   _DeleteSuccess deleteSuccess() {
     return const _DeleteSuccess();
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $NoteActorState = _$NoteActorStateTearOff();
 
 /// @nodoc
 mixin _$NoteActorState {
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(),
-    @required Result actionInProgress(),
-    @required Result deleteFailure(NoteFailure noteFailure),
-    @required Result deleteSuccess(),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() actionInProgress,
+    required TResult Function(NoteFailure noteFailure) deleteFailure,
+    required TResult Function() deleteSuccess,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(),
-    Result actionInProgress(),
-    Result deleteFailure(NoteFailure noteFailure),
-    Result deleteSuccess(),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? actionInProgress,
+    TResult Function(NoteFailure noteFailure)? deleteFailure,
+    TResult Function()? deleteSuccess,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_Initial value),
-    @required Result actionInProgress(_ActionInProgress value),
-    @required Result deleteFailure(_DeleteFailure value),
-    @required Result deleteSuccess(_DeleteSuccess value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_ActionInProgress value) actionInProgress,
+    required TResult Function(_DeleteFailure value) deleteFailure,
+    required TResult Function(_DeleteSuccess value) deleteSuccess,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_Initial value),
-    Result actionInProgress(_ActionInProgress value),
-    Result deleteFailure(_DeleteFailure value),
-    Result deleteSuccess(_DeleteSuccess value),
-    @required Result orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_ActionInProgress value)? actionInProgress,
+    TResult Function(_DeleteFailure value)? deleteFailure,
+    TResult Function(_DeleteSuccess value)? deleteSuccess,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -302,6 +311,7 @@ class __$InitialCopyWithImpl<$Res> extends _$NoteActorStateCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_Initial implements _Initial {
   const _$_Initial();
 
@@ -320,29 +330,24 @@ class _$_Initial implements _Initial {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(),
-    @required Result actionInProgress(),
-    @required Result deleteFailure(NoteFailure noteFailure),
-    @required Result deleteSuccess(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() actionInProgress,
+    required TResult Function(NoteFailure noteFailure) deleteFailure,
+    required TResult Function() deleteSuccess,
   }) {
-    assert(initial != null);
-    assert(actionInProgress != null);
-    assert(deleteFailure != null);
-    assert(deleteSuccess != null);
     return initial();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(),
-    Result actionInProgress(),
-    Result deleteFailure(NoteFailure noteFailure),
-    Result deleteSuccess(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? actionInProgress,
+    TResult Function(NoteFailure noteFailure)? deleteFailure,
+    TResult Function()? deleteSuccess,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial();
     }
@@ -351,29 +356,24 @@ class _$_Initial implements _Initial {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_Initial value),
-    @required Result actionInProgress(_ActionInProgress value),
-    @required Result deleteFailure(_DeleteFailure value),
-    @required Result deleteSuccess(_DeleteSuccess value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_ActionInProgress value) actionInProgress,
+    required TResult Function(_DeleteFailure value) deleteFailure,
+    required TResult Function(_DeleteSuccess value) deleteSuccess,
   }) {
-    assert(initial != null);
-    assert(actionInProgress != null);
-    assert(deleteFailure != null);
-    assert(deleteSuccess != null);
     return initial(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_Initial value),
-    Result actionInProgress(_ActionInProgress value),
-    Result deleteFailure(_DeleteFailure value),
-    Result deleteSuccess(_DeleteSuccess value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_ActionInProgress value)? actionInProgress,
+    TResult Function(_DeleteFailure value)? deleteFailure,
+    TResult Function(_DeleteSuccess value)? deleteSuccess,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initial != null) {
       return initial(this);
     }
@@ -405,6 +405,7 @@ class __$ActionInProgressCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_ActionInProgress implements _ActionInProgress {
   const _$_ActionInProgress();
 
@@ -423,29 +424,24 @@ class _$_ActionInProgress implements _ActionInProgress {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(),
-    @required Result actionInProgress(),
-    @required Result deleteFailure(NoteFailure noteFailure),
-    @required Result deleteSuccess(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() actionInProgress,
+    required TResult Function(NoteFailure noteFailure) deleteFailure,
+    required TResult Function() deleteSuccess,
   }) {
-    assert(initial != null);
-    assert(actionInProgress != null);
-    assert(deleteFailure != null);
-    assert(deleteSuccess != null);
     return actionInProgress();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(),
-    Result actionInProgress(),
-    Result deleteFailure(NoteFailure noteFailure),
-    Result deleteSuccess(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? actionInProgress,
+    TResult Function(NoteFailure noteFailure)? deleteFailure,
+    TResult Function()? deleteSuccess,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (actionInProgress != null) {
       return actionInProgress();
     }
@@ -454,29 +450,24 @@ class _$_ActionInProgress implements _ActionInProgress {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_Initial value),
-    @required Result actionInProgress(_ActionInProgress value),
-    @required Result deleteFailure(_DeleteFailure value),
-    @required Result deleteSuccess(_DeleteSuccess value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_ActionInProgress value) actionInProgress,
+    required TResult Function(_DeleteFailure value) deleteFailure,
+    required TResult Function(_DeleteSuccess value) deleteSuccess,
   }) {
-    assert(initial != null);
-    assert(actionInProgress != null);
-    assert(deleteFailure != null);
-    assert(deleteSuccess != null);
     return actionInProgress(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_Initial value),
-    Result actionInProgress(_ActionInProgress value),
-    Result deleteFailure(_DeleteFailure value),
-    Result deleteSuccess(_DeleteSuccess value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_ActionInProgress value)? actionInProgress,
+    TResult Function(_DeleteFailure value)? deleteFailure,
+    TResult Function(_DeleteSuccess value)? deleteSuccess,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (actionInProgress != null) {
       return actionInProgress(this);
     }
@@ -511,18 +502,18 @@ class __$DeleteFailureCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object noteFailure = freezed,
+    Object? noteFailure = freezed,
   }) {
     return _then(_DeleteFailure(
-      noteFailure == freezed ? _value.noteFailure : noteFailure as NoteFailure,
+      noteFailure == freezed
+          ? _value.noteFailure
+          : noteFailure // ignore: cast_nullable_to_non_nullable
+              as NoteFailure,
     ));
   }
 
   @override
   $NoteFailureCopyWith<$Res> get noteFailure {
-    if (_value.noteFailure == null) {
-      return null;
-    }
     return $NoteFailureCopyWith<$Res>(_value.noteFailure, (value) {
       return _then(_value.copyWith(noteFailure: value));
     });
@@ -530,8 +521,9 @@ class __$DeleteFailureCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_DeleteFailure implements _DeleteFailure {
-  const _$_DeleteFailure(this.noteFailure) : assert(noteFailure != null);
+  const _$_DeleteFailure(this.noteFailure);
 
   @override
   final NoteFailure noteFailure;
@@ -554,35 +546,31 @@ class _$_DeleteFailure implements _DeleteFailure {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(noteFailure);
 
+  @JsonKey(ignore: true)
   @override
   _$DeleteFailureCopyWith<_DeleteFailure> get copyWith =>
       __$DeleteFailureCopyWithImpl<_DeleteFailure>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(),
-    @required Result actionInProgress(),
-    @required Result deleteFailure(NoteFailure noteFailure),
-    @required Result deleteSuccess(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() actionInProgress,
+    required TResult Function(NoteFailure noteFailure) deleteFailure,
+    required TResult Function() deleteSuccess,
   }) {
-    assert(initial != null);
-    assert(actionInProgress != null);
-    assert(deleteFailure != null);
-    assert(deleteSuccess != null);
     return deleteFailure(noteFailure);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(),
-    Result actionInProgress(),
-    Result deleteFailure(NoteFailure noteFailure),
-    Result deleteSuccess(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? actionInProgress,
+    TResult Function(NoteFailure noteFailure)? deleteFailure,
+    TResult Function()? deleteSuccess,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (deleteFailure != null) {
       return deleteFailure(noteFailure);
     }
@@ -591,29 +579,24 @@ class _$_DeleteFailure implements _DeleteFailure {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_Initial value),
-    @required Result actionInProgress(_ActionInProgress value),
-    @required Result deleteFailure(_DeleteFailure value),
-    @required Result deleteSuccess(_DeleteSuccess value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_ActionInProgress value) actionInProgress,
+    required TResult Function(_DeleteFailure value) deleteFailure,
+    required TResult Function(_DeleteSuccess value) deleteSuccess,
   }) {
-    assert(initial != null);
-    assert(actionInProgress != null);
-    assert(deleteFailure != null);
-    assert(deleteSuccess != null);
     return deleteFailure(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_Initial value),
-    Result actionInProgress(_ActionInProgress value),
-    Result deleteFailure(_DeleteFailure value),
-    Result deleteSuccess(_DeleteSuccess value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_ActionInProgress value)? actionInProgress,
+    TResult Function(_DeleteFailure value)? deleteFailure,
+    TResult Function(_DeleteSuccess value)? deleteSuccess,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (deleteFailure != null) {
       return deleteFailure(this);
     }
@@ -624,8 +607,10 @@ class _$_DeleteFailure implements _DeleteFailure {
 abstract class _DeleteFailure implements NoteActorState {
   const factory _DeleteFailure(NoteFailure noteFailure) = _$_DeleteFailure;
 
-  NoteFailure get noteFailure;
-  _$DeleteFailureCopyWith<_DeleteFailure> get copyWith;
+  NoteFailure get noteFailure => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$DeleteFailureCopyWith<_DeleteFailure> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -648,6 +633,7 @@ class __$DeleteSuccessCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_DeleteSuccess implements _DeleteSuccess {
   const _$_DeleteSuccess();
 
@@ -666,29 +652,24 @@ class _$_DeleteSuccess implements _DeleteSuccess {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initial(),
-    @required Result actionInProgress(),
-    @required Result deleteFailure(NoteFailure noteFailure),
-    @required Result deleteSuccess(),
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() actionInProgress,
+    required TResult Function(NoteFailure noteFailure) deleteFailure,
+    required TResult Function() deleteSuccess,
   }) {
-    assert(initial != null);
-    assert(actionInProgress != null);
-    assert(deleteFailure != null);
-    assert(deleteSuccess != null);
     return deleteSuccess();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initial(),
-    Result actionInProgress(),
-    Result deleteFailure(NoteFailure noteFailure),
-    Result deleteSuccess(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? actionInProgress,
+    TResult Function(NoteFailure noteFailure)? deleteFailure,
+    TResult Function()? deleteSuccess,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (deleteSuccess != null) {
       return deleteSuccess();
     }
@@ -697,29 +678,24 @@ class _$_DeleteSuccess implements _DeleteSuccess {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initial(_Initial value),
-    @required Result actionInProgress(_ActionInProgress value),
-    @required Result deleteFailure(_DeleteFailure value),
-    @required Result deleteSuccess(_DeleteSuccess value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_ActionInProgress value) actionInProgress,
+    required TResult Function(_DeleteFailure value) deleteFailure,
+    required TResult Function(_DeleteSuccess value) deleteSuccess,
   }) {
-    assert(initial != null);
-    assert(actionInProgress != null);
-    assert(deleteFailure != null);
-    assert(deleteSuccess != null);
     return deleteSuccess(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initial(_Initial value),
-    Result actionInProgress(_ActionInProgress value),
-    Result deleteFailure(_DeleteFailure value),
-    Result deleteSuccess(_DeleteSuccess value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_ActionInProgress value)? actionInProgress,
+    TResult Function(_DeleteFailure value)? deleteFailure,
+    TResult Function(_DeleteSuccess value)? deleteSuccess,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (deleteSuccess != null) {
       return deleteSuccess(this);
     }

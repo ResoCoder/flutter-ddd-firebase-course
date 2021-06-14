@@ -6,7 +6,7 @@ import 'package:notes_firebase_ddd_course/domain/notes/value_objects.dart';
 
 class BodyField extends HookWidget {
   const BodyField({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -30,10 +30,10 @@ class BodyField extends HookWidget {
             maxLines: null,
             minLines: 5,
             onChanged: (value) => context
-                .bloc<NoteFormBloc>()
+                .read<NoteFormBloc>()
                 .add(NoteFormEvent.bodyChanged(value)),
             validator: (_) => context
-                .bloc<NoteFormBloc>()
+                .read<NoteFormBloc>()
                 .state
                 .note
                 .body
