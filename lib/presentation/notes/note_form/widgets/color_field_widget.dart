@@ -5,7 +5,7 @@ import 'package:notes_firebase_ddd_course/domain/notes/value_objects.dart';
 
 class ColorField extends StatelessWidget {
   const ColorField({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -13,6 +13,7 @@ class ColorField extends StatelessWidget {
     return BlocBuilder<NoteFormBloc, NoteFormState>(
       buildWhen: (p, c) => p.note.color != c.note.color,
       builder: (context, state) {
+        // ignore: sized_box_for_whitespace
         return Container(
           height: 80,
           child: ListView.separated(
@@ -25,7 +26,7 @@ class ColorField extends StatelessWidget {
               return GestureDetector(
                 onTap: () {
                   context
-                      .bloc<NoteFormBloc>()
+                      .read<NoteFormBloc>()
                       .add(NoteFormEvent.colorChanged(itemColor));
                 },
                 child: Material(
@@ -39,6 +40,7 @@ class ColorField extends StatelessWidget {
                           : BorderSide.none,
                     ),
                   ),
+                  // ignore: sized_box_for_whitespace
                   child: Container(
                     width: 50,
                     height: 50,

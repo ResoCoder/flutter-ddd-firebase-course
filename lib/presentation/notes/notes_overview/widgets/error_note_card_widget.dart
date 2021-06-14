@@ -5,8 +5,8 @@ class ErrorNoteCard extends StatelessWidget {
   final Note note;
 
   const ErrorNoteCard({
-    Key key,
-    @required this.note,
+    Key? key,
+    required this.note,
   }) : super(key: key);
 
   @override
@@ -21,7 +21,7 @@ class ErrorNoteCard extends StatelessWidget {
               'Invalid note, please, contact support',
               style: Theme.of(context)
                   .primaryTextTheme
-                  .bodyText2
+                  .bodyText2!
                   .copyWith(fontSize: 18),
             ),
             const SizedBox(height: 2),

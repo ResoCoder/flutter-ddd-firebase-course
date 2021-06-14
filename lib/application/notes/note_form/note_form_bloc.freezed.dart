@@ -1,5 +1,5 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
-// ignore_for_file: deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies
+// ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides
 
 part of 'note_form_bloc.dart';
 
@@ -9,84 +9,85 @@ part of 'note_form_bloc.dart';
 
 T _$identity<T>(T value) => value;
 
+final _privateConstructorUsedError = UnsupportedError(
+    'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more informations: https://github.com/rrousselGit/freezed#custom-getters-and-methods');
+
 /// @nodoc
 class _$NoteFormEventTearOff {
   const _$NoteFormEventTearOff();
 
-// ignore: unused_element
   _Initialized initialized(Option<Note> initialNoteOption) {
     return _Initialized(
       initialNoteOption,
     );
   }
 
-// ignore: unused_element
   _BodyChanged bodyChanged(String bodyStr) {
     return _BodyChanged(
       bodyStr,
     );
   }
 
-// ignore: unused_element
   _ColorChanged colorChanged(Color color) {
     return _ColorChanged(
       color,
     );
   }
 
-// ignore: unused_element
   _TodosChanged todosChanged(KtList<TodoItemPrimitive> todos) {
     return _TodosChanged(
       todos,
     );
   }
 
-// ignore: unused_element
   _Saved saved() {
     return const _Saved();
   }
 }
 
 /// @nodoc
-// ignore: unused_element
 const $NoteFormEvent = _$NoteFormEventTearOff();
 
 /// @nodoc
 mixin _$NoteFormEvent {
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initialized(Option<Note> initialNoteOption),
-    @required Result bodyChanged(String bodyStr),
-    @required Result colorChanged(Color color),
-    @required Result todosChanged(KtList<TodoItemPrimitive> todos),
-    @required Result saved(),
-  });
+  TResult when<TResult extends Object?>({
+    required TResult Function(Option<Note> initialNoteOption) initialized,
+    required TResult Function(String bodyStr) bodyChanged,
+    required TResult Function(Color color) colorChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todos) todosChanged,
+    required TResult Function() saved,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initialized(Option<Note> initialNoteOption),
-    Result bodyChanged(String bodyStr),
-    Result colorChanged(Color color),
-    Result todosChanged(KtList<TodoItemPrimitive> todos),
-    Result saved(),
-    @required Result orElse(),
-  });
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Option<Note> initialNoteOption)? initialized,
+    TResult Function(String bodyStr)? bodyChanged,
+    TResult Function(Color color)? colorChanged,
+    TResult Function(KtList<TodoItemPrimitive> todos)? todosChanged,
+    TResult Function()? saved,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initialized(_Initialized value),
-    @required Result bodyChanged(_BodyChanged value),
-    @required Result colorChanged(_ColorChanged value),
-    @required Result todosChanged(_TodosChanged value),
-    @required Result saved(_Saved value),
-  });
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initialized value) initialized,
+    required TResult Function(_BodyChanged value) bodyChanged,
+    required TResult Function(_ColorChanged value) colorChanged,
+    required TResult Function(_TodosChanged value) todosChanged,
+    required TResult Function(_Saved value) saved,
+  }) =>
+      throw _privateConstructorUsedError;
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initialized(_Initialized value),
-    Result bodyChanged(_BodyChanged value),
-    Result colorChanged(_ColorChanged value),
-    Result todosChanged(_TodosChanged value),
-    Result saved(_Saved value),
-    @required Result orElse(),
-  });
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initialized value)? initialized,
+    TResult Function(_BodyChanged value)? bodyChanged,
+    TResult Function(_ColorChanged value)? colorChanged,
+    TResult Function(_TodosChanged value)? todosChanged,
+    TResult Function(_Saved value)? saved,
+    required TResult orElse(),
+  }) =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -126,20 +127,21 @@ class __$InitializedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object initialNoteOption = freezed,
+    Object? initialNoteOption = freezed,
   }) {
     return _then(_Initialized(
       initialNoteOption == freezed
           ? _value.initialNoteOption
-          : initialNoteOption as Option<Note>,
+          : initialNoteOption // ignore: cast_nullable_to_non_nullable
+              as Option<Note>,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_Initialized implements _Initialized {
-  const _$_Initialized(this.initialNoteOption)
-      : assert(initialNoteOption != null);
+  const _$_Initialized(this.initialNoteOption);
 
   @override
   final Option<Note> initialNoteOption;
@@ -163,38 +165,33 @@ class _$_Initialized implements _Initialized {
       runtimeType.hashCode ^
       const DeepCollectionEquality().hash(initialNoteOption);
 
+  @JsonKey(ignore: true)
   @override
   _$InitializedCopyWith<_Initialized> get copyWith =>
       __$InitializedCopyWithImpl<_Initialized>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initialized(Option<Note> initialNoteOption),
-    @required Result bodyChanged(String bodyStr),
-    @required Result colorChanged(Color color),
-    @required Result todosChanged(KtList<TodoItemPrimitive> todos),
-    @required Result saved(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Option<Note> initialNoteOption) initialized,
+    required TResult Function(String bodyStr) bodyChanged,
+    required TResult Function(Color color) colorChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todos) todosChanged,
+    required TResult Function() saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return initialized(initialNoteOption);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initialized(Option<Note> initialNoteOption),
-    Result bodyChanged(String bodyStr),
-    Result colorChanged(Color color),
-    Result todosChanged(KtList<TodoItemPrimitive> todos),
-    Result saved(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Option<Note> initialNoteOption)? initialized,
+    TResult Function(String bodyStr)? bodyChanged,
+    TResult Function(Color color)? colorChanged,
+    TResult Function(KtList<TodoItemPrimitive> todos)? todosChanged,
+    TResult Function()? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initialized != null) {
       return initialized(initialNoteOption);
     }
@@ -203,32 +200,26 @@ class _$_Initialized implements _Initialized {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initialized(_Initialized value),
-    @required Result bodyChanged(_BodyChanged value),
-    @required Result colorChanged(_ColorChanged value),
-    @required Result todosChanged(_TodosChanged value),
-    @required Result saved(_Saved value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initialized value) initialized,
+    required TResult Function(_BodyChanged value) bodyChanged,
+    required TResult Function(_ColorChanged value) colorChanged,
+    required TResult Function(_TodosChanged value) todosChanged,
+    required TResult Function(_Saved value) saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return initialized(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initialized(_Initialized value),
-    Result bodyChanged(_BodyChanged value),
-    Result colorChanged(_ColorChanged value),
-    Result todosChanged(_TodosChanged value),
-    Result saved(_Saved value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initialized value)? initialized,
+    TResult Function(_BodyChanged value)? bodyChanged,
+    TResult Function(_ColorChanged value)? colorChanged,
+    TResult Function(_TodosChanged value)? todosChanged,
+    TResult Function(_Saved value)? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (initialized != null) {
       return initialized(this);
     }
@@ -239,8 +230,10 @@ class _$_Initialized implements _Initialized {
 abstract class _Initialized implements NoteFormEvent {
   const factory _Initialized(Option<Note> initialNoteOption) = _$_Initialized;
 
-  Option<Note> get initialNoteOption;
-  _$InitializedCopyWith<_Initialized> get copyWith;
+  Option<Note> get initialNoteOption => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$InitializedCopyWith<_Initialized> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -263,17 +256,21 @@ class __$BodyChangedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object bodyStr = freezed,
+    Object? bodyStr = freezed,
   }) {
     return _then(_BodyChanged(
-      bodyStr == freezed ? _value.bodyStr : bodyStr as String,
+      bodyStr == freezed
+          ? _value.bodyStr
+          : bodyStr // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_BodyChanged implements _BodyChanged {
-  const _$_BodyChanged(this.bodyStr) : assert(bodyStr != null);
+  const _$_BodyChanged(this.bodyStr);
 
   @override
   final String bodyStr;
@@ -295,38 +292,33 @@ class _$_BodyChanged implements _BodyChanged {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(bodyStr);
 
+  @JsonKey(ignore: true)
   @override
   _$BodyChangedCopyWith<_BodyChanged> get copyWith =>
       __$BodyChangedCopyWithImpl<_BodyChanged>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initialized(Option<Note> initialNoteOption),
-    @required Result bodyChanged(String bodyStr),
-    @required Result colorChanged(Color color),
-    @required Result todosChanged(KtList<TodoItemPrimitive> todos),
-    @required Result saved(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Option<Note> initialNoteOption) initialized,
+    required TResult Function(String bodyStr) bodyChanged,
+    required TResult Function(Color color) colorChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todos) todosChanged,
+    required TResult Function() saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return bodyChanged(bodyStr);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initialized(Option<Note> initialNoteOption),
-    Result bodyChanged(String bodyStr),
-    Result colorChanged(Color color),
-    Result todosChanged(KtList<TodoItemPrimitive> todos),
-    Result saved(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Option<Note> initialNoteOption)? initialized,
+    TResult Function(String bodyStr)? bodyChanged,
+    TResult Function(Color color)? colorChanged,
+    TResult Function(KtList<TodoItemPrimitive> todos)? todosChanged,
+    TResult Function()? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (bodyChanged != null) {
       return bodyChanged(bodyStr);
     }
@@ -335,32 +327,26 @@ class _$_BodyChanged implements _BodyChanged {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initialized(_Initialized value),
-    @required Result bodyChanged(_BodyChanged value),
-    @required Result colorChanged(_ColorChanged value),
-    @required Result todosChanged(_TodosChanged value),
-    @required Result saved(_Saved value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initialized value) initialized,
+    required TResult Function(_BodyChanged value) bodyChanged,
+    required TResult Function(_ColorChanged value) colorChanged,
+    required TResult Function(_TodosChanged value) todosChanged,
+    required TResult Function(_Saved value) saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return bodyChanged(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initialized(_Initialized value),
-    Result bodyChanged(_BodyChanged value),
-    Result colorChanged(_ColorChanged value),
-    Result todosChanged(_TodosChanged value),
-    Result saved(_Saved value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initialized value)? initialized,
+    TResult Function(_BodyChanged value)? bodyChanged,
+    TResult Function(_ColorChanged value)? colorChanged,
+    TResult Function(_TodosChanged value)? todosChanged,
+    TResult Function(_Saved value)? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (bodyChanged != null) {
       return bodyChanged(this);
     }
@@ -371,8 +357,10 @@ class _$_BodyChanged implements _BodyChanged {
 abstract class _BodyChanged implements NoteFormEvent {
   const factory _BodyChanged(String bodyStr) = _$_BodyChanged;
 
-  String get bodyStr;
-  _$BodyChangedCopyWith<_BodyChanged> get copyWith;
+  String get bodyStr => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$BodyChangedCopyWith<_BodyChanged> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -396,17 +384,21 @@ class __$ColorChangedCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object color = freezed,
+    Object? color = freezed,
   }) {
     return _then(_ColorChanged(
-      color == freezed ? _value.color : color as Color,
+      color == freezed
+          ? _value.color
+          : color // ignore: cast_nullable_to_non_nullable
+              as Color,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_ColorChanged implements _ColorChanged {
-  const _$_ColorChanged(this.color) : assert(color != null);
+  const _$_ColorChanged(this.color);
 
   @override
   final Color color;
@@ -428,38 +420,33 @@ class _$_ColorChanged implements _ColorChanged {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(color);
 
+  @JsonKey(ignore: true)
   @override
   _$ColorChangedCopyWith<_ColorChanged> get copyWith =>
       __$ColorChangedCopyWithImpl<_ColorChanged>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initialized(Option<Note> initialNoteOption),
-    @required Result bodyChanged(String bodyStr),
-    @required Result colorChanged(Color color),
-    @required Result todosChanged(KtList<TodoItemPrimitive> todos),
-    @required Result saved(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Option<Note> initialNoteOption) initialized,
+    required TResult Function(String bodyStr) bodyChanged,
+    required TResult Function(Color color) colorChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todos) todosChanged,
+    required TResult Function() saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return colorChanged(color);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initialized(Option<Note> initialNoteOption),
-    Result bodyChanged(String bodyStr),
-    Result colorChanged(Color color),
-    Result todosChanged(KtList<TodoItemPrimitive> todos),
-    Result saved(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Option<Note> initialNoteOption)? initialized,
+    TResult Function(String bodyStr)? bodyChanged,
+    TResult Function(Color color)? colorChanged,
+    TResult Function(KtList<TodoItemPrimitive> todos)? todosChanged,
+    TResult Function()? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (colorChanged != null) {
       return colorChanged(color);
     }
@@ -468,32 +455,26 @@ class _$_ColorChanged implements _ColorChanged {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initialized(_Initialized value),
-    @required Result bodyChanged(_BodyChanged value),
-    @required Result colorChanged(_ColorChanged value),
-    @required Result todosChanged(_TodosChanged value),
-    @required Result saved(_Saved value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initialized value) initialized,
+    required TResult Function(_BodyChanged value) bodyChanged,
+    required TResult Function(_ColorChanged value) colorChanged,
+    required TResult Function(_TodosChanged value) todosChanged,
+    required TResult Function(_Saved value) saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return colorChanged(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initialized(_Initialized value),
-    Result bodyChanged(_BodyChanged value),
-    Result colorChanged(_ColorChanged value),
-    Result todosChanged(_TodosChanged value),
-    Result saved(_Saved value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initialized value)? initialized,
+    TResult Function(_BodyChanged value)? bodyChanged,
+    TResult Function(_ColorChanged value)? colorChanged,
+    TResult Function(_TodosChanged value)? todosChanged,
+    TResult Function(_Saved value)? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (colorChanged != null) {
       return colorChanged(this);
     }
@@ -504,8 +485,10 @@ class _$_ColorChanged implements _ColorChanged {
 abstract class _ColorChanged implements NoteFormEvent {
   const factory _ColorChanged(Color color) = _$_ColorChanged;
 
-  Color get color;
-  _$ColorChangedCopyWith<_ColorChanged> get copyWith;
+  Color get color => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$ColorChangedCopyWith<_ColorChanged> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -529,17 +512,21 @@ class __$TodosChangedCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object todos = freezed,
+    Object? todos = freezed,
   }) {
     return _then(_TodosChanged(
-      todos == freezed ? _value.todos : todos as KtList<TodoItemPrimitive>,
+      todos == freezed
+          ? _value.todos
+          : todos // ignore: cast_nullable_to_non_nullable
+              as KtList<TodoItemPrimitive>,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_TodosChanged implements _TodosChanged {
-  const _$_TodosChanged(this.todos) : assert(todos != null);
+  const _$_TodosChanged(this.todos);
 
   @override
   final KtList<TodoItemPrimitive> todos;
@@ -561,38 +548,33 @@ class _$_TodosChanged implements _TodosChanged {
   int get hashCode =>
       runtimeType.hashCode ^ const DeepCollectionEquality().hash(todos);
 
+  @JsonKey(ignore: true)
   @override
   _$TodosChangedCopyWith<_TodosChanged> get copyWith =>
       __$TodosChangedCopyWithImpl<_TodosChanged>(this, _$identity);
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initialized(Option<Note> initialNoteOption),
-    @required Result bodyChanged(String bodyStr),
-    @required Result colorChanged(Color color),
-    @required Result todosChanged(KtList<TodoItemPrimitive> todos),
-    @required Result saved(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Option<Note> initialNoteOption) initialized,
+    required TResult Function(String bodyStr) bodyChanged,
+    required TResult Function(Color color) colorChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todos) todosChanged,
+    required TResult Function() saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return todosChanged(todos);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initialized(Option<Note> initialNoteOption),
-    Result bodyChanged(String bodyStr),
-    Result colorChanged(Color color),
-    Result todosChanged(KtList<TodoItemPrimitive> todos),
-    Result saved(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Option<Note> initialNoteOption)? initialized,
+    TResult Function(String bodyStr)? bodyChanged,
+    TResult Function(Color color)? colorChanged,
+    TResult Function(KtList<TodoItemPrimitive> todos)? todosChanged,
+    TResult Function()? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (todosChanged != null) {
       return todosChanged(todos);
     }
@@ -601,32 +583,26 @@ class _$_TodosChanged implements _TodosChanged {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initialized(_Initialized value),
-    @required Result bodyChanged(_BodyChanged value),
-    @required Result colorChanged(_ColorChanged value),
-    @required Result todosChanged(_TodosChanged value),
-    @required Result saved(_Saved value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initialized value) initialized,
+    required TResult Function(_BodyChanged value) bodyChanged,
+    required TResult Function(_ColorChanged value) colorChanged,
+    required TResult Function(_TodosChanged value) todosChanged,
+    required TResult Function(_Saved value) saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return todosChanged(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initialized(_Initialized value),
-    Result bodyChanged(_BodyChanged value),
-    Result colorChanged(_ColorChanged value),
-    Result todosChanged(_TodosChanged value),
-    Result saved(_Saved value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initialized value)? initialized,
+    TResult Function(_BodyChanged value)? bodyChanged,
+    TResult Function(_ColorChanged value)? colorChanged,
+    TResult Function(_TodosChanged value)? todosChanged,
+    TResult Function(_Saved value)? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (todosChanged != null) {
       return todosChanged(this);
     }
@@ -638,8 +614,10 @@ abstract class _TodosChanged implements NoteFormEvent {
   const factory _TodosChanged(KtList<TodoItemPrimitive> todos) =
       _$_TodosChanged;
 
-  KtList<TodoItemPrimitive> get todos;
-  _$TodosChangedCopyWith<_TodosChanged> get copyWith;
+  KtList<TodoItemPrimitive> get todos => throw _privateConstructorUsedError;
+  @JsonKey(ignore: true)
+  _$TodosChangedCopyWith<_TodosChanged> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -659,6 +637,7 @@ class __$SavedCopyWithImpl<$Res> extends _$NoteFormEventCopyWithImpl<$Res>
 }
 
 /// @nodoc
+
 class _$_Saved implements _Saved {
   const _$_Saved();
 
@@ -677,32 +656,26 @@ class _$_Saved implements _Saved {
 
   @override
   @optionalTypeArgs
-  Result when<Result extends Object>({
-    @required Result initialized(Option<Note> initialNoteOption),
-    @required Result bodyChanged(String bodyStr),
-    @required Result colorChanged(Color color),
-    @required Result todosChanged(KtList<TodoItemPrimitive> todos),
-    @required Result saved(),
+  TResult when<TResult extends Object?>({
+    required TResult Function(Option<Note> initialNoteOption) initialized,
+    required TResult Function(String bodyStr) bodyChanged,
+    required TResult Function(Color color) colorChanged,
+    required TResult Function(KtList<TodoItemPrimitive> todos) todosChanged,
+    required TResult Function() saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return saved();
   }
 
   @override
   @optionalTypeArgs
-  Result maybeWhen<Result extends Object>({
-    Result initialized(Option<Note> initialNoteOption),
-    Result bodyChanged(String bodyStr),
-    Result colorChanged(Color color),
-    Result todosChanged(KtList<TodoItemPrimitive> todos),
-    Result saved(),
-    @required Result orElse(),
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Option<Note> initialNoteOption)? initialized,
+    TResult Function(String bodyStr)? bodyChanged,
+    TResult Function(Color color)? colorChanged,
+    TResult Function(KtList<TodoItemPrimitive> todos)? todosChanged,
+    TResult Function()? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (saved != null) {
       return saved();
     }
@@ -711,32 +684,26 @@ class _$_Saved implements _Saved {
 
   @override
   @optionalTypeArgs
-  Result map<Result extends Object>({
-    @required Result initialized(_Initialized value),
-    @required Result bodyChanged(_BodyChanged value),
-    @required Result colorChanged(_ColorChanged value),
-    @required Result todosChanged(_TodosChanged value),
-    @required Result saved(_Saved value),
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initialized value) initialized,
+    required TResult Function(_BodyChanged value) bodyChanged,
+    required TResult Function(_ColorChanged value) colorChanged,
+    required TResult Function(_TodosChanged value) todosChanged,
+    required TResult Function(_Saved value) saved,
   }) {
-    assert(initialized != null);
-    assert(bodyChanged != null);
-    assert(colorChanged != null);
-    assert(todosChanged != null);
-    assert(saved != null);
     return saved(this);
   }
 
   @override
   @optionalTypeArgs
-  Result maybeMap<Result extends Object>({
-    Result initialized(_Initialized value),
-    Result bodyChanged(_BodyChanged value),
-    Result colorChanged(_ColorChanged value),
-    Result todosChanged(_TodosChanged value),
-    Result saved(_Saved value),
-    @required Result orElse(),
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initialized value)? initialized,
+    TResult Function(_BodyChanged value)? bodyChanged,
+    TResult Function(_ColorChanged value)? colorChanged,
+    TResult Function(_TodosChanged value)? todosChanged,
+    TResult Function(_Saved value)? saved,
+    required TResult orElse(),
   }) {
-    assert(orElse != null);
     if (saved != null) {
       return saved(this);
     }
@@ -752,13 +719,12 @@ abstract class _Saved implements NoteFormEvent {
 class _$NoteFormStateTearOff {
   const _$NoteFormStateTearOff();
 
-// ignore: unused_element
   _NoteFormState call(
-      {@required Note note,
-      @required bool showErrorMessages,
-      @required bool isEditing,
-      @required bool isSaving,
-      @required Option<Either<NoteFailure, Unit>> saveFailureOrSuccessOption}) {
+      {required Note note,
+      required bool showErrorMessages,
+      required bool isEditing,
+      required bool isSaving,
+      required Option<Either<NoteFailure, Unit>> saveFailureOrSuccessOption}) {
     return _NoteFormState(
       note: note,
       showErrorMessages: showErrorMessages,
@@ -770,18 +736,20 @@ class _$NoteFormStateTearOff {
 }
 
 /// @nodoc
-// ignore: unused_element
 const $NoteFormState = _$NoteFormStateTearOff();
 
 /// @nodoc
 mixin _$NoteFormState {
-  Note get note;
-  bool get showErrorMessages;
-  bool get isEditing;
-  bool get isSaving;
-  Option<Either<NoteFailure, Unit>> get saveFailureOrSuccessOption;
+  Note get note => throw _privateConstructorUsedError;
+  bool get showErrorMessages => throw _privateConstructorUsedError;
+  bool get isEditing => throw _privateConstructorUsedError;
+  bool get isSaving => throw _privateConstructorUsedError;
+  Option<Either<NoteFailure, Unit>> get saveFailureOrSuccessOption =>
+      throw _privateConstructorUsedError;
 
-  $NoteFormStateCopyWith<NoteFormState> get copyWith;
+  @JsonKey(ignore: true)
+  $NoteFormStateCopyWith<NoteFormState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
@@ -810,30 +778,38 @@ class _$NoteFormStateCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object note = freezed,
-    Object showErrorMessages = freezed,
-    Object isEditing = freezed,
-    Object isSaving = freezed,
-    Object saveFailureOrSuccessOption = freezed,
+    Object? note = freezed,
+    Object? showErrorMessages = freezed,
+    Object? isEditing = freezed,
+    Object? isSaving = freezed,
+    Object? saveFailureOrSuccessOption = freezed,
   }) {
     return _then(_value.copyWith(
-      note: note == freezed ? _value.note : note as Note,
+      note: note == freezed
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as Note,
       showErrorMessages: showErrorMessages == freezed
           ? _value.showErrorMessages
-          : showErrorMessages as bool,
-      isEditing: isEditing == freezed ? _value.isEditing : isEditing as bool,
-      isSaving: isSaving == freezed ? _value.isSaving : isSaving as bool,
+          : showErrorMessages // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isEditing: isEditing == freezed
+          ? _value.isEditing
+          : isEditing // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isSaving: isSaving == freezed
+          ? _value.isSaving
+          : isSaving // ignore: cast_nullable_to_non_nullable
+              as bool,
       saveFailureOrSuccessOption: saveFailureOrSuccessOption == freezed
           ? _value.saveFailureOrSuccessOption
-          : saveFailureOrSuccessOption as Option<Either<NoteFailure, Unit>>,
+          : saveFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<NoteFailure, Unit>>,
     ));
   }
 
   @override
   $NoteCopyWith<$Res> get note {
-    if (_value.note == null) {
-      return null;
-    }
     return $NoteCopyWith<$Res>(_value.note, (value) {
       return _then(_value.copyWith(note: value));
     });
@@ -871,39 +847,46 @@ class __$NoteFormStateCopyWithImpl<$Res>
 
   @override
   $Res call({
-    Object note = freezed,
-    Object showErrorMessages = freezed,
-    Object isEditing = freezed,
-    Object isSaving = freezed,
-    Object saveFailureOrSuccessOption = freezed,
+    Object? note = freezed,
+    Object? showErrorMessages = freezed,
+    Object? isEditing = freezed,
+    Object? isSaving = freezed,
+    Object? saveFailureOrSuccessOption = freezed,
   }) {
     return _then(_NoteFormState(
-      note: note == freezed ? _value.note : note as Note,
+      note: note == freezed
+          ? _value.note
+          : note // ignore: cast_nullable_to_non_nullable
+              as Note,
       showErrorMessages: showErrorMessages == freezed
           ? _value.showErrorMessages
-          : showErrorMessages as bool,
-      isEditing: isEditing == freezed ? _value.isEditing : isEditing as bool,
-      isSaving: isSaving == freezed ? _value.isSaving : isSaving as bool,
+          : showErrorMessages // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isEditing: isEditing == freezed
+          ? _value.isEditing
+          : isEditing // ignore: cast_nullable_to_non_nullable
+              as bool,
+      isSaving: isSaving == freezed
+          ? _value.isSaving
+          : isSaving // ignore: cast_nullable_to_non_nullable
+              as bool,
       saveFailureOrSuccessOption: saveFailureOrSuccessOption == freezed
           ? _value.saveFailureOrSuccessOption
-          : saveFailureOrSuccessOption as Option<Either<NoteFailure, Unit>>,
+          : saveFailureOrSuccessOption // ignore: cast_nullable_to_non_nullable
+              as Option<Either<NoteFailure, Unit>>,
     ));
   }
 }
 
 /// @nodoc
+
 class _$_NoteFormState implements _NoteFormState {
   const _$_NoteFormState(
-      {@required this.note,
-      @required this.showErrorMessages,
-      @required this.isEditing,
-      @required this.isSaving,
-      @required this.saveFailureOrSuccessOption})
-      : assert(note != null),
-        assert(showErrorMessages != null),
-        assert(isEditing != null),
-        assert(isSaving != null),
-        assert(saveFailureOrSuccessOption != null);
+      {required this.note,
+      required this.showErrorMessages,
+      required this.isEditing,
+      required this.isSaving,
+      required this.saveFailureOrSuccessOption});
 
   @override
   final Note note;
@@ -952,6 +935,7 @@ class _$_NoteFormState implements _NoteFormState {
       const DeepCollectionEquality().hash(isSaving) ^
       const DeepCollectionEquality().hash(saveFailureOrSuccessOption);
 
+  @JsonKey(ignore: true)
   @override
   _$NoteFormStateCopyWith<_NoteFormState> get copyWith =>
       __$NoteFormStateCopyWithImpl<_NoteFormState>(this, _$identity);
@@ -959,28 +943,26 @@ class _$_NoteFormState implements _NoteFormState {
 
 abstract class _NoteFormState implements NoteFormState {
   const factory _NoteFormState(
-          {@required
-              Note note,
-          @required
-              bool showErrorMessages,
-          @required
-              bool isEditing,
-          @required
-              bool isSaving,
-          @required
-              Option<Either<NoteFailure, Unit>> saveFailureOrSuccessOption}) =
-      _$_NoteFormState;
+      {required Note note,
+      required bool showErrorMessages,
+      required bool isEditing,
+      required bool isSaving,
+      required Option<Either<NoteFailure, Unit>>
+          saveFailureOrSuccessOption}) = _$_NoteFormState;
 
   @override
-  Note get note;
+  Note get note => throw _privateConstructorUsedError;
   @override
-  bool get showErrorMessages;
+  bool get showErrorMessages => throw _privateConstructorUsedError;
   @override
-  bool get isEditing;
+  bool get isEditing => throw _privateConstructorUsedError;
   @override
-  bool get isSaving;
+  bool get isSaving => throw _privateConstructorUsedError;
   @override
-  Option<Either<NoteFailure, Unit>> get saveFailureOrSuccessOption;
+  Option<Either<NoteFailure, Unit>> get saveFailureOrSuccessOption =>
+      throw _privateConstructorUsedError;
   @override
-  _$NoteFormStateCopyWith<_NoteFormState> get copyWith;
+  @JsonKey(ignore: true)
+  _$NoteFormStateCopyWith<_NoteFormState> get copyWith =>
+      throw _privateConstructorUsedError;
 }
