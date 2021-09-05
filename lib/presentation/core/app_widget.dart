@@ -10,6 +10,7 @@ import 'package:notes_firebase_ddd_course/presentation/sign_in/sign_in_page.dart
 class AppWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final _appRouter = app_router.Router();
     return MultiBlocProvider(
       providers: [
         BlocProvider(
@@ -17,10 +18,11 @@ class AppWidget extends StatelessWidget {
               getIt<AuthBloc>()..add(const AuthEvent.authCheckRequested()),
         )
       ],
-      child: MaterialApp(
+      child: MaterialApp.router(
+        routerDelegate: AutoRouterDelegate(_appRouter),
+        routeInformationParser: _appRouter.defaultRouteParser(),
         title: 'Notes',
-        debugShowCheckedModeBanner: false,
-        builder: ExtendedNavigator.builder(router: app_router.Router()),
+        debugShowCheckedModeBanner: false,        
         theme: ThemeData.light().copyWith(
           primaryColor: Colors.green[800],
           accentColor: Colors.blueAccent,
