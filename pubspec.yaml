@@ -19,7 +19,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  auto_route: ^0.6.9
+  auto_route: ^2.3.0
   cloud_firestore: ^0.14.0+2
   dartz: ^0.9.1
   firebase_auth: ^0.18.0+1

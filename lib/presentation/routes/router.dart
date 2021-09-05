@@ -4,13 +4,12 @@ import 'package:notes_firebase_ddd_course/presentation/notes/notes_overview/note
 import 'package:notes_firebase_ddd_course/presentation/sign_in/sign_in_page.dart';
 import 'package:notes_firebase_ddd_course/presentation/splash/splash_page.dart';
 
-@MaterialAutoRouter(
-  generateNavigationHelperExtension: true,
+@MaterialAutoRouter( 
   routes: <AutoRoute>[
-    MaterialRoute(page: SplashPage, initial: true),
-    MaterialRoute(page: SignInPage),
-    MaterialRoute(page: NotesOverviewPage),
-    MaterialRoute(page: NoteFormPage, fullscreenDialog: true),
+    AutoRoute(page: SplashPage, initial: true),
+    AutoRoute(page: SignInPage),
+    AutoRoute(page: NotesOverviewPage),
+    AutoRoute(page: NoteFormPage, fullscreenDialog: true),
   ],
 )
 class $Router {}
